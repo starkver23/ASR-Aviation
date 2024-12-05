@@ -12,6 +12,7 @@ import Services from "./components/Services";
 import Footer from "./components/Footer";
 import AboutUs from "./pages/AboutUs";
 import Fleet from "./pages/Fleet";
+import ContactUs from "./pages/ContactUs";
 
 const App = () => {
   return (
@@ -44,7 +45,7 @@ const MainContent = () => {
           <Route path="/" element={<Services />} />
           <Route path="/about" element={<AboutUs />} />
           <Route path="/fleet" element={<Fleet />} />
-          <Route path="/contact" element={<div>Contact Us</div>} />
+          <Route path="/contact" element={<ContactUs />} />
         </Routes>
       </div>
     </>

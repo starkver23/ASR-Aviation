@@ -113,46 +113,49 @@ const Fleet = () => {
   return (
     <section className="my-20 font-sans font-thin">
       <div className="text-center mb-12">
-        <h1 className="font-sans font-thin text-center text-5xl mb-10">
-          OUR FLEET
-        </h1>
-        <p className="text-xl text-black font-sans font-thin mb-10">
+        <h1 className="text-5xl font-thin text-gray-800 mb-5">OUR FLEET</h1>
+        <p className="text-xl text-gray-700 mb-10">
           Explore our fleet of world-class aircraft, offering luxurious and
           efficient travel experiences.
         </p>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      {/* Aircraft Grid */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-4">
         {aircrafts.map((aircraft, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 cursor-pointer"
+            className="flex flex-col items-center text-center border p-6 rounded-lg shadow-md cursor-pointer hover:shadow-xl transition-all"
             onClick={() => openModal(aircraft)}
           >
             <div className="mb-6">
               <img
                 src={aircraft.images[0]}
                 alt={aircraft.name}
-                className="w-auto h-auto max-w-full object-contain"
+                className="w-full h-auto object-contain rounded-md"
               />
             </div>
-            <div className="text-center">
-              <h3 className="text-2xl font-bold mb-4">{aircraft.name}</h3>
-              <p className="text-lg text-gray-700">{aircraft.description}</p>
-            </div>
+            <h3 className="text-2xl font-semibold text-gray-900 mb-4">
+              {aircraft.name}
+            </h3>
+            <p className="text-lg text-gray-600">{aircraft.description}</p>
           </div>
         ))}
       </div>
 
+      {/* Modal */}
       {isModalOpen && selectedAircraft && (
         <div
           className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center"
           onClick={closeModal}
         >
           <div
-            className="bg-white p-8 rounded-lg w-3/4 md:w-1/2"
+            className="bg-white p-8 rounded-lg w-full md:w-2/3 lg:w-1/2"
             onClick={(e) => e.stopPropagation()}
           >
-            <h2 className="text-3xl font-bold mb-4">{selectedAircraft.name}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              {selectedAircraft.name}
+            </h2>
             <div className="relative">
               <img
                 src={selectedAircraft.images[currentImageIndex]}
