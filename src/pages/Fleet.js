@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useCallback } from "react";
+import premier from "../images/planes/premier.png";
 
 const importAll = (r) => r.keys().map(r);
 const images = importAll(
@@ -32,16 +33,46 @@ const Fleet = () => {
       images: images.filter((img) => img.includes("hawker")),
     },
     {
-      name: "Premier 1A",
-      description:
-        "The Premier 1A is a light jet that combines impressive speed, range, and a spacious cabin, offering a comfortable and efficient travel experience for business and leisure.",
-      images: images.filter((img) => img.includes("premier")),
-    },
-    {
       name: "Legacy 600",
       description:
         "The Legacy 600 is a large, super-midsize jet known for its luxurious cabin, long range, and impressive performance, making it ideal for both business and long-haul flights.",
       images: images.filter((img) => img.includes("legacy")),
+    },
+    {
+      name: "Premier 1A",
+      description:
+        "The Premier 1A is a light jet that combines impressive speed, range, and a spacious cabin, offering a comfortable and efficient travel experience for business and leisure.",
+      images: [premier],
+    },
+    {
+      name: "Global 6000",
+      description:
+        "The Global 6000 is a large, long-range business jet that offers exceptional comfort, advanced technology, and impressive speed, making it ideal for intercontinental travel and high-end business flights.",
+      images: images.filter((img) => img.includes("global")),
+    },
+    {
+      name: "Gulfstream G550",
+      description:
+        "The Gulfstream G550 is a large, ultra-long-range business jet renowned for its luxurious cabin, advanced avionics, and exceptional performance, making it a top choice for global business travel.",
+      images: images.filter((img) => img.includes("gulfstream")),
+    },
+    {
+      name: "Pilatus PC-24",
+      description:
+        "The Pilatus PC-24 is a versatile light jet with exceptional short-field capability, combining the flexibility of a turboprop with the speed and comfort of a jet, perfect for accessing smaller airports with ease.",
+      images: images.filter((img) => img.includes("pilatus")),
+    },
+    {
+      name: "Cessna Citation Sovereign",
+      description:
+        "The Cessna Citation Sovereign is a super-midsize jet known for its impressive range, spacious cabin, and excellent performance, offering a perfect balance of comfort and efficiency for medium to long-range flights.",
+      images: images.filter((img) => img.includes("citation")),
+    },
+    {
+      name: "Bombardier Global 7500",
+      description:
+        "The Bombardier Global 7500 is an ultra-long-range business jet, renowned for its luxurious, spacious cabin, advanced technology, and exceptional performance, making it one of the most capable and comfortable aircraft in its class.",
+      images: images.filter((img) => img.includes("bombardier")),
     },
   ];
 
