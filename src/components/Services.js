@@ -12,11 +12,9 @@ const Services = () => {
       {/* Paragraph before services */}
       <div className="text-center mb-12">
         <h1 className="font-sans font-thin text-center font-large mb-10 text-5xl">
-          THE UBER IN PRIVATE AVIATION
+          Fly across the globe with luxury at your comfort.{" "}
         </h1>
         <p className="text-1.5xl text-black font-sans font-thin mb-10">
-          Fly across the globe with luxury at your comfort.
-          <br />
           ASR Aviation offers a diverse private aircraft fleet, delivering
           personalized services with unmatched reliability, financial stability,
           and global access, backed by Berkshire Hathaway’s commitment to
