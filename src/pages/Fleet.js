@@ -74,6 +74,24 @@ const Fleet = () => {
         "The Bombardier Global 7500 is an ultra-long-range business jet, renowned for its luxurious, spacious cabin, advanced technology, and exceptional performance, making it one of the most capable and comfortable aircraft in its class.",
       images: images.filter((img) => img.includes("bombardier")),
     },
+    {
+      name: "Bell 407",
+      description:
+        "The Bell 407 is a versatile, single-engine light helicopter known for its reliability, speed, and comfort. It features a four-blade rotor system, making it ideal for a wide range of missions, including EMS, law enforcement, and corporate transport.",
+      images: images.filter((img) => img.includes("bell")),
+    },
+    {
+      name: "Airbus H125",
+      description:
+        "The Airbus H125 has a sleek, compact design with a high-mounted tail rotor and streamlined fuselage, optimized for performance and agility. Its modern exterior ensures efficiency in diverse operational environments.",
+      images: images.filter((img) => img.includes("airbus")),
+    },
+    {
+      name: "Bell 429",
+      description:
+        "The Bell 429 is a light, twin-engine helicopter known for its advanced avionics, spacious cabin, and exceptional performance. It is widely used for EMS, law enforcement, and corporate transport, offering versatility and reliability.",
+      images: images.filter((img) => img.includes("Bell429")),
+    },
   ];
 
   const openModal = (aircraft) => {
