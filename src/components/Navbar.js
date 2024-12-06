@@ -11,8 +11,13 @@ const Navbar = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  // Function to close the mobile menu when a link is clicked
+  const closeMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className="relative top-0 left-0 w-full flex justify-between items-center p-4 bg-gray-900 bg-opacity-80 z-10 font-sans font-bold">
+    <nav className="relative top-0 left-0 w-full flex justify-between items-center p-4 bg-[#1a1a2e] z-10 font-sans font-bold">
       {/* Logo linking to the home/landing page */}
       <Link to="/" className="flex items-center space-x-2">
         <img
@@ -36,7 +41,7 @@ const Navbar = () => {
       <div
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20 flex flex-col items-center justify-center`}
+        } absolute top-0 left-0 w-full h-full bg-[#1a1a2e] z-20 flex flex-col items-center justify-center`}
         style={{
           height: isMobileMenuOpen ? "100vh" : "0",
         }}
@@ -54,7 +59,7 @@ const Navbar = () => {
           <Link
             to="/"
             className="text-white text-xl hover:text-yellow-500"
-            style={{ animationDelay: "0s" }}
+            onClick={closeMenu} // Close the menu on link click
           >
             Home
           </Link>
@@ -62,7 +67,7 @@ const Navbar = () => {
           <Link
             to="/about"
             className="text-white text-xl hover:text-yellow-500"
-            style={{ animationDelay: "0.2s" }}
+            onClick={closeMenu} // Close the menu on link click
           >
             About Us
           </Link>
@@ -70,7 +75,7 @@ const Navbar = () => {
           <Link
             to="/fleet"
             className="text-white text-xl hover:text-yellow-500"
-            style={{ animationDelay: "0.4s" }}
+            onClick={closeMenu} // Close the menu on link click
           >
             Fleet
           </Link>
@@ -78,7 +83,7 @@ const Navbar = () => {
           <Link
             to="/contact"
             className="text-white text-xl hover:text-yellow-500"
-            style={{ animationDelay: "0.6s" }}
+            onClick={closeMenu} // Close the menu on link click
           >
             Contact Us
           </Link>
