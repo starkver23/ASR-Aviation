@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { GiHamburgerMenu } from "react-icons/gi"; // Using react-icons for the hamburger icon
-import { IoClose } from "react-icons/io5"; // Using react-icons for the close icon
+import { GiHamburgerMenu } from "react-icons/gi"; // Hamburger icon
+import { IoClose } from "react-icons/io5"; // Close icon
 import logo from "../images/logo-asr.png"; // Adjust the path if needed
 
 const Navbar = () => {
@@ -15,11 +15,10 @@ const Navbar = () => {
     <nav className="relative top-0 left-0 w-full flex justify-between items-center p-4 bg-gray-900 bg-opacity-80 z-10 font-sans font-bold">
       {/* Logo linking to the home/landing page */}
       <Link to="/" className="flex items-center space-x-2">
-        {/* Logo image */}
         <img
           src={logo}
           alt="Company Logo"
-          className="h-8 w-auto hover:text-gray-400" // Adjust size as needed
+          className="h-8 w-auto hover:text-gray-400"
         />
         <span className="font-sans font-bold text-white text-2xl hover:text-yellow-500">
           ASR Aviation
@@ -33,11 +32,11 @@ const Navbar = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (Full-screen menu) */}
       <div
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20 transition-all duration-500 ease-in-out flex flex-col items-center justify-center`}
+        } absolute top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-20 flex flex-col items-center justify-center`}
         style={{
           height: isMobileMenuOpen ? "100vh" : "0",
         }}
@@ -51,17 +50,10 @@ const Navbar = () => {
         </button>
 
         {/* Navigation Links */}
-        <div
-          className="flex flex-col items-center space-y-6"
-          style={{
-            animation: isMobileMenuOpen
-              ? "slideDown 0.5s ease-out forwards"
-              : "none",
-          }}
-        >
+        <div className="flex flex-col items-center space-y-6">
           <Link
             to="/"
-            className="text-white text-xl hover:text-yellow-500 transform transition-all duration-500 ease-in-out"
+            className="text-white text-xl hover:text-yellow-500"
             style={{ animationDelay: "0s" }}
           >
             Home
@@ -69,7 +61,7 @@ const Navbar = () => {
           <hr className="w-1/2 border-t-2 border-white" />
           <Link
             to="/about"
-            className="text-white text-xl hover:text-yellow-500 transform transition-all duration-500 ease-in-out"
+            className="text-white text-xl hover:text-yellow-500"
             style={{ animationDelay: "0.2s" }}
           >
             About Us
@@ -77,7 +69,7 @@ const Navbar = () => {
           <hr className="w-1/2 border-t-2 border-white" />
           <Link
             to="/fleet"
-            className="text-white text-xl hover:text-yellow-500 transform transition-all duration-500 ease-in-out"
+            className="text-white text-xl hover:text-yellow-500"
             style={{ animationDelay: "0.4s" }}
           >
             Fleet
@@ -85,12 +77,28 @@ const Navbar = () => {
           <hr className="w-1/2 border-t-2 border-white" />
           <Link
             to="/contact"
-            className="text-white text-xl hover:text-yellow-500 transform transition-all duration-500 ease-in-out"
+            className="text-white text-xl hover:text-yellow-500"
             style={{ animationDelay: "0.6s" }}
           >
             Contact Us
           </Link>
         </div>
+      </div>
+
+      {/* Navigation Links for Desktop/Laptop Screens */}
+      <div className="hidden lg:flex space-x-6 text-white font-sans font-bold">
+        <Link to="/" className="py-2 px-4 hover:text-yellow-500">
+          Home
+        </Link>
+        <Link to="/about" className="py-2 px-4 hover:text-yellow-500">
+          About Us
+        </Link>
+        <Link to="/fleet" className="py-2 px-4 hover:text-yellow-500">
+          Fleet
+        </Link>
+        <Link to="/contact" className="py-2 px-4 hover:text-yellow-500">
+          Contact Us
+        </Link>
       </div>
     </nav>
   );
