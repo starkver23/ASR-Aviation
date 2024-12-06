@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import video1 from "../videos/video4.mp4";
+import video1 from "../videos/video6.mp4";
 import video2 from "../videos/video2.mp4";
 import video3 from "../videos/video5.mp4";
 
@@ -35,8 +35,8 @@ const Carousel = () => {
       </div>
 
       {/* Text over video */}
-      <div className="absolute inset-0 flex justify-start items-center p-10 text-white font-sans font-thin">
-        <div className="font-sans font-thin text-lg md:text-2xl lg:text-3xl font-bold max-w-xl">
+      <div className="absolute inset-0 flex justify-start items-center p-10 text-white">
+        <div className="font-sans text-lg md:text-2xl lg:text-3xl font-extrabold max-w-xl leading-tight drop-shadow-md">
           {texts[currentSlide]}
         </div>
       </div>

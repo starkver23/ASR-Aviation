@@ -10,7 +10,7 @@ const Footer = () => {
           href="https://www.linkedin.com/company/asr-aviation/posts/?feedView=all"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-6 text-black hover:text-gray-700" // Black color with hover effect
+          className="mx-6 text-black hover:text-gray-700"
         >
           <FaLinkedin size={24} /> {/* Reduced size */}
         </a>
@@ -18,7 +18,7 @@ const Footer = () => {
           href="https://www.instagram.com/asr.aviation/"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-6 text-black hover:text-gray-700" // Black color with hover effect
+          className="mx-6 text-black hover:text-gray-700"
         >
           <FaInstagram size={24} /> {/* Reduced size */}
         </a>
@@ -26,14 +26,35 @@ const Footer = () => {
           href="https://www.twitter.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="mx-6 text-black hover:text-gray-700" // Black color with hover effect
+          className="mx-6 text-black hover:text-gray-700"
         >
           <FaTwitter size={24} /> {/* Reduced size */}
         </a>
       </div>
 
+      {/* Divider and Contact Info */}
+      <div className="flex justify-center items-center mt-6 text-center text-black">
+        {/* Email Section */}
+        <div className="pr-6">
+          <a
+            href="mailto:asrofficial18@gmail.com"
+            className="hover:text-gray-700"
+          >
+            Email: asrofficial18@gmail.com
+          </a>
+        </div>
+
+        {/* Vertical Line */}
+        <div className="h-8 w-px bg-gray-700 mx-4"></div>
+
+        {/* Mobile Section */}
+        <div className="pl-6">
+          <p>Phone: (+91) 9431938079</p>
+        </div>
+      </div>
+
       {/* Rights Reserved Text */}
-      <div className="text-center mt-3">
+      <div className="text-center mt-6">
         © 2024 Aviation Company. All rights reserved.
       </div>
     </footer>

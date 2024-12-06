@@ -1,27 +1,48 @@
-import React from "react";
+import React, { useState } from "react";
 
 const ContactUs = () => {
+  const [isSubmitted, setIsSubmitted] = useState(false);
+
   return (
     <section className="my-20 font-sans font-thin">
       <div className="text-center mb-12">
-        <h1 className="font-sans font-thin text-center text-5xl mb-10">
-          CONTACT US
-        </h1>
-        <p className="text-xl text-black font-sans font-thin mb-10">
-          Reach out to us with your queries or requests via email, and our team
-          will get back to you promptly.
+        <h1 className="font-sans text-center text-5xl mb-10">CONTACT US</h1>
+        <p className="text-xl text-black mb-10">
+          Reach out to us with your queries or requests, and our team will get
+          back to you promptly.
         </p>
       </div>
 
-      <div className="max-w-4xl mx-auto bg-white shadow-md rounded-md p-8">
-        <p className="text-lg mb-6">
-          You can contact us directly at{" "}
-          <a href="mailto:asrofficial18@gmail.com" className="text-blue-600">
-            MailUs
-          </a>
-          . We look forward to hearing from you!
-        </p>
-      </div>
+      {/* Embed Google Form */}
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScY2pr6-4-yFEgO9nS6gKkufH9FX9U11p6NVdYilGkSSJd1yg/viewform?usp=dialog"
+        width="640"
+        height="1500"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
+        title="Contact Us Form"
+      >
+        Loading…
+      </iframe>
+
+      {/* Thank You Pop-Up */}
+      {isSubmitted && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+          <div className="bg-white p-6 rounded shadow-lg text-center">
+            <h2 className="text-2xl font-bold mb-4">Thank You!</h2>
+            <p>
+              Your submission has been received. We'll get back to you soon.
+            </p>
+            <button
+              onClick={() => setIsSubmitted(false)}
+              className="mt-4 bg-black text-white px-4 py-2 rounded hover:bg-gray-700"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 };
