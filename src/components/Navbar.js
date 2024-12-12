@@ -41,7 +41,7 @@ const Navbar = () => {
       <div
         className={`${
           isMobileMenuOpen ? "block" : "hidden"
-        } absolute top-0 left-0 w-full h-full bg-[#1a1a2e] z-20 flex flex-col items-center justify-center`}
+        } absolute top-0 left-0 w-full h-full bg-transparent backdrop-blur-3xl z-20 flex flex-col items-center justify-center`}
         style={{
           height: isMobileMenuOpen ? "100vh" : "0",
         }}
