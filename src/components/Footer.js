@@ -58,7 +58,7 @@ const Footer = () => {
 
         {/* Mobile Section */}
         <div className="pl-6">
-          <p>Phone: (+91) 9829538079 / 9431938079</p>
+          <p>Phone: (+91) 9829538079 / 9413938079</p>
         </div>
       </div>
 
