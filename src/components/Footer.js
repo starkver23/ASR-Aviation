@@ -49,8 +49,6 @@ const Footer = () => {
           >
             asrofficial18@gmail.com
           </a>
-          
-          
         </div>
 
         {/* Vertical Line */}
