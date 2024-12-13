@@ -37,18 +37,20 @@ const Footer = () => {
         {/* Email Section */}
         <div className="pr-6">
           <a
-            href="mailto:asrofficial18@gmail.com"
-            className="hover:text-gray-700"
-          >
-            Email: asrofficial18@gmail.com
-          </a>
-          <br />
-          <a
             href="mailto:ceo@asraviation.com"
             className="hover:text-gray-700"
           >
             Email: ceo@asraviation.com
           </a>
+          <br />
+          <a
+            href="mailto:asrofficial18@gmail.com"
+            className="hover:text-gray-700"
+          >
+            asrofficial18@gmail.com
+          </a>
+          
+          
         </div>
 
         {/* Vertical Line */}
@@ -56,7 +58,7 @@ const Footer = () => {
 
         {/* Mobile Section */}
         <div className="pl-6">
-          <p>Phone: (+91) 9431938079 / 9829538079</p>
+          <p>Phone: (+91) 9829538079 / 9431938079</p>
         </div>
       </div>
 
