@@ -42,6 +42,12 @@ const Footer = () => {
           >
             Email: asrofficial18@gmail.com
           </a>
+          <a
+            href="mailto:ceo@asraviation.com"
+            className="hover:text-gray-700"
+          >
+            Email: ceo@asraviation.com
+          </a>
         </div>
 
         {/* Vertical Line */}
