@@ -15,7 +15,7 @@ const ContactUs = () => {
 
       {/* Embed Google Form */}
       <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScY2pr6-4-yFEgO9nS6gKkufH9FX9U11p6NVdYilGkSSJd1yg/viewform?usp=dialog"
+        src="https://docs.google.com/forms/d/e/1FAIpQLSc-_vBk69T_KyKpVnhVpseTdtrXw7HT7wSFpDYJb7cdP5dOpA/viewform?usp=dialog"
         width="640"
         height="1500"
         frameBorder="0"
