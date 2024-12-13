@@ -42,6 +42,7 @@ const Footer = () => {
           >
             Email: asrofficial18@gmail.com
           </a>
+          <br />
           <a
             href="mailto:ceo@asraviation.com"
             className="hover:text-gray-700"
@@ -55,7 +56,7 @@ const Footer = () => {
 
         {/* Mobile Section */}
         <div className="pl-6">
-          <p>Phone: (+91) 9431938079</p>
+          <p>Phone: (+91) 9431938079 / 9829538079</p>
         </div>
       </div>
 
