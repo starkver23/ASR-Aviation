@@ -23,7 +23,7 @@ const Navbar = () => {
         <img
           src={logo}
           alt="Company Logo"
-          className="h-8 w-auto hover:text-gray-400"
+          className="h-14 w-auto hover:text-gray-400"
         />
         <span className="font-sans font-bold text-transparent text-2xl bg-clip-text bg-gradient-to-r from-yellow-500 to-yellow-300">
           ASR Aviation
