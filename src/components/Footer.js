@@ -37,10 +37,10 @@ const Footer = () => {
         {/* Email Section */}
         <div className="pr-6">
           <a
-            href="mailto:ceo@asraviation.com"
+            href="mailto:Ceo.asr.aviation@gmail.com"
             className="hover:text-gray-700"
           >
-            Email: ceo@asraviation.com
+            Email: Ceo.asr.aviation@gmail.com
           </a>
           <br />
           <a
