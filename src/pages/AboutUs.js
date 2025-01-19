@@ -43,15 +43,6 @@ const AboutUs = () => {
               <div className="w-1/2"></div>
             </div>
 
-            {/* Team Member 2 */}
-            <div className="flex justify-between items-center">
-              <div className="w-1/2"></div>
-              <div className="w-1/2 text-left pl-6">
-                <h3 className="text-xl font-bold">Ankith Gaurishanker</h3>
-                <p className="text-lg text-gray-700">COO</p>
-              </div>
-            </div>
-
             {/* Team Member 3 */}
             <div className="flex justify-between items-center">
               <div className="w-1/2 text-right pr-6">
