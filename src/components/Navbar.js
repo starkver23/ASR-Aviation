@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi"; // Hamburger icon
 import { IoClose } from "react-icons/io5"; // Close icon
-import logo from "../images/logo-asr-1.png"; // Adjust the path if needed
+import logo from "../images/logo.png"; // Adjust the path if needed
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

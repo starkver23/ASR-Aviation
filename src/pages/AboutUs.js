@@ -65,16 +65,16 @@ const AboutUs = () => {
             <div className="flex justify-between items-center">
               <div className="w-1/2"></div>
               <div className="w-1/2 text-left pl-6">
-                <h3 className="text-xl font-bold">Adithya Vedantam</h3>
-                <p className="text-lg text-gray-700">Sales and Social Media</p>
+                <h3 className="text-xl font-bold">Harshada Chandel</h3>
+                <p className="text-lg text-gray-700">UI/UX Designer</p>
               </div>
             </div>
 
             {/* Team Member 5 */}
             <div className="flex justify-between items-center">
               <div className="w-1/2 text-right pr-6">
-                <h3 className="text-xl font-bold">Harshada Chandel</h3>
-                <p className="text-lg text-gray-700">UI/UX Designer</p>
+                <h3 className="text-xl font-bold">Adithya Vedantam</h3>
+                <p className="text-lg text-gray-700">Sales and Social Media</p>
               </div>
               <div className="w-1/2"></div>
             </div>
