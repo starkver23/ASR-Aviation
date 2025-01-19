@@ -47,16 +47,16 @@ const AboutUs = () => {
             <div className="flex justify-between items-center">
               <div className="w-1/2"></div>
               <div className="w-1/2 text-left pl-6">
-                <h3 className="text-xl font-bold">Ankith Gaurishanker</h3>
-                <p className="text-lg text-gray-700">COO</p>
+                <h3 className="text-xl font-bold">Gaurav Sherawat</h3>
+                <p className="text-lg text-gray-700">CTO</p>
               </div>
             </div>
 
             {/* Team Member 3 */}
             <div className="flex justify-between items-center">
               <div className="w-1/2 text-right pr-6">
-                <h3 className="text-xl font-bold">Gaurav Sherawat</h3>
-                <p className="text-lg text-gray-700">CTO</p>
+                <h3 className="text-xl font-bold">Aryan Verma</h3>
+                <p className="text-lg text-gray-700">Full Stack Developer</p>
               </div>
               <div className="w-1/2"></div>
             </div>
@@ -65,45 +65,18 @@ const AboutUs = () => {
             <div className="flex justify-between items-center">
               <div className="w-1/2"></div>
               <div className="w-1/2 text-left pl-6">
-                <h3 className="text-xl font-bold">Aryan Verma</h3>
-                <p className="text-lg text-gray-700">Full Stack Developer</p>
+                <h3 className="text-xl font-bold">Adithya Vedantam</h3>
+                <p className="text-lg text-gray-700">Sales and Social Media</p>
               </div>
             </div>
 
             {/* Team Member 5 */}
             <div className="flex justify-between items-center">
               <div className="w-1/2 text-right pr-6">
-                <h3 className="text-xl font-bold">Adithya Vedantam</h3>
-                <p className="text-lg text-gray-700">Sales and Social Media</p>
-              </div>
-              <div className="w-1/2"></div>
-            </div>
-
-            {/* Team Member 6 */}
-            <div className="flex justify-between items-center">
-              <div className="w-1/2"></div>
-              <div className="w-1/2 text-left pl-6">
                 <h3 className="text-xl font-bold">Harshada Chandel</h3>
                 <p className="text-lg text-gray-700">UI/UX Designer</p>
               </div>
-            </div>
-
-            {/* Team Member 7 */}
-            <div className="flex justify-between items-center">
-              <div className="w-1/2 text-right pr-6">
-                <h3 className="text-xl font-bold">Srivaths Kamath</h3>
-                <p className="text-lg text-gray-700">Sales and Marketing</p>
-              </div>
               <div className="w-1/2"></div>
-            </div>
-
-            {/* Team Member 8 */}
-            <div className="flex justify-between items-center">
-              <div className="w-1/2"></div>
-              <div className="w-1/2 text-left pl-6">
-                <h3 className="text-xl font-bold">Arnav Gupta</h3>
-                <p className="text-lg text-gray-700">Full Stack Developer</p>
-              </div>
             </div>
           </div>
         </div>
